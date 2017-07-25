@@ -1,3 +1,8 @@
 // Place all the styles related to the Records controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$spacer-x: 1rem;
+
+.ml-1 {
+  margin-left: ($spacer-x * .25) !important;
+}

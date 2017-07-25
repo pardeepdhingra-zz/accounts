@@ -17,7 +17,6 @@
   render: ->
     React.DOM.form
       className: 'form-inline'
-      onSubmit: @handleSubmit
       React.DOM.div
         className: 'form-group'
         React.DOM.input
@@ -28,7 +27,7 @@
           value: @state.date
           onChange: @handleChange
       React.DOM.div
-        className: 'form-group'
+        className: 'form-group ml-1'
         React.DOM.input
           type: 'text'
           className: 'form-control'
@@ -37,7 +36,7 @@
           value: @state.title
           onChange: @handleChange
       React.DOM.div
-        className: 'form-group'
+        className: 'form-group ml-1'
         React.DOM.input
           type: 'number'
           className: 'form-control'
@@ -47,6 +46,6 @@
           onChange: @handleChange
       React.DOM.button
         type: 'submit'
-        className: 'btn btn-primary'
+        className: 'btn btn-primary ml-1'
         disabled: !@valid()
         'Create record'
